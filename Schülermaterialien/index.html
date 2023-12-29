@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Schatzsucher
+    </title>
+    <link rel = "stylesheet" href = "style.css">
+    <style>
+        body {
+            background-image: url("Media/Egypt0.png");
+        }
+    </style>
+</head>
+
+<body>
+    <div style = "background-color: sandybrown; max-width: fit-content;" class = "center">
+        <h1 style = "color:#FFFF; text-align: center;">
+            Herzlich Willkommen zum Schatzsucherrätsel!
+        </h1>
+        <p style = "color:#FFFF; text-align: justify;">
+        An dieser Station müsst Ihr insgesamt 7 Rätsel lösen um den Schatz zu erhalten.<br>
+        Doch keine Sorge! Auf Eurer Reise durch die Rätsel werdet Ihr auch Hilfen erhalten.<br>
+        Wenn Ihr bereit seit, dann klickt unten auf "Schatzsuche starten."
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <button style = "background-color: red; float: right;" onclick="loadNext()">
+            Schatzsuche starten!
+        </button>
+        <br>
+    </p>
+</body>
+
+<script>
+    function loadNext() {
+        window.location = "Station1.html"
+    }
+</script>

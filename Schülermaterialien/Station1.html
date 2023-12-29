@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Schatzsucher: Das Kartenrätsel
+    </title>
+    <link rel = "stylesheet" href = "style.css">
+    <style>
+        body {
+            background-image: url("Media/Egypt1.png");
+        }
+    </style>
+</head>
+
+<body>
+    <div style = "background-color: sandybrown; max-width: fit-content;" class = "center">
+        <h1 style = "color:#FFFF; text-align: center;">
+            Rätsel 1: Die alte Schatzkarte
+        </h1>
+        <p style = "color:#FFFF; text-align: justify;">
+            Auf eurem Weg zum Schatz wollt Ihr euch die Position des Schatzes mit der Hilfe des micro:bits merken.
+            Ladet Euch dafür das Programm auf den micro:bit und gebt die Position des Schatzes in den micro:bit ein.
+            Wieviele Schritte nach Rechts und nach Unten müsst Ihr machen?
+            <br><br><br>
+            <form style = "float: left; text-align: left; font-size: large;" id = "solutionInput">
+                <label for = "stepsRight">Schritte nach Rechts:</label><br>
+                <input type = "number" id = "stepsRight" name = "stepsRight"><br>
+                <label for = "stepsDown">Schritte nach Unten:</label><br>
+                <input type= "number" id = "stepsDown" name = "stepsDown"><br>
+            </form>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <button id = "button1" style= "background-color: orangered; float: right" onclick= "checkSolution()">Lösung überprüfen</button>
+        <br>
+    </p>
+</body>
+
+<script>
+function checkSolution(){
+    /*
+    Überprüfen der Lösung. Ist die Eingabe korrekt, verschwindet das Eingabefeld und man kann zum nächsten Rätsel gehen.
+    */
+        if(document.getElementById("stepsRight").value == 3 && document.getElementById("stepsDown").value == 3) {
+            alert("Ihr habt das Rätsel richtig gelöst!");
+            document.getElementById("button1").textContent = "Zum nächsten Rätsel";
+            document.getElementById("button1").style.backgroundColor = "red";
+            document.getElementById("button1").onclick = function() {
+                location.href = "Station2.html?Previous=53746174696F6E31"
+            }
+            document.getElementById("solutionInput").hidden = true;
+        }
+        else {
+            alert("Nein, diese Lösung ist leider nicht richtig. Probiert es erneut.");
+        }
+    }
+</script>
