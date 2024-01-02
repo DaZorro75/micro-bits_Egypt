@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!-- Website für Station 2: Wächterrätsel-->
+
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Schatzsucher: Das Wächterrätsel
+    </title>
+    <link rel = "stylesheet" href = "Style/style.css">
+    <link rel = "icon" href = "Media/Icon.png">
+    <script src = "Scripts/Station3.js"></script>
+    <style>
+        body {
+            background-image: url("Media/Egypt3.png");
+        }
+    </style>
+</head>
+
+<body onload= "checkPrevious()">
+
+    <div style = "background-color: sandybrown; max-width: fit-content;" class = "center">
+        
+        <h1 style = "color:#FFFF; text-align: center;">
+            Rätsel 3: Sandsturm
+        </h1>
+        
+        <p style = "color:#FFFF; text-align: justify;">
+            Auf eurem Weg zum Schatz müsst Ihr einen Sandsturm passieren. Die Schlangen, die Ihr für den Wächter gesammelt habt, weisen Euch den Weg.
+            Jede Schlange weist Euch für 5 Schritte den Weg. Wie viele Schritte braucht Ihr durch den Sandsturm?<br>
+    
+            <!-- Eingebettete Makecode-Umgebung -->
+            
+            <div style="position:relative;height:0;padding-bottom:70%;overflow:hidden;">
+                <iframe id="makeCodeIFrame" style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/#pub:S75187-02950-37619-05215" frameborder="0" sandbox="allow-forms allow-scripts allow-modals allow-downloads allow-same-origin" allow = "usb"></iframe>
+            </div>
+
+            <br>
+            <!-- Ende eingebettete Makecode-Umgebung -->
+           
+            <br><br>
+            <p style = "color: #FFFF; text-align: left;">Wie viele Schritte benötigt Ihr, um durch den Sandsturm zu kommen?<br>
+                Gebt hier Eure Lösung ein:<br>
+            </p>
+            
+            <div style="padding-top: 20pt;">
+            <form style = "font-weight: bold;font-size: x-large; width: calc(300px + 15em);text-align: left;" id = "solutionInput">
+                <label style = "color: white" for = "numberOfSteps">Anzahl der Schritte:</label>
+                <input type="number" id="numberOfSteps" name="numberOfSteps">
+            </form>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <button id = "button1" style= "background-color: orangered; float: right" onclick= "checkSolution()">Lösung überprüfen</button><br>
+        </p>
+    </div>
+</body>
+

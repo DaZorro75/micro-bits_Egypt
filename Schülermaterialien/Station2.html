@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<!-- Website für Station 2: Wächterrätsel-->
+
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Schatzsucher: Das Wächterrätsel
+    </title>
+    <link rel = "stylesheet" href = "Style/style.css">
+    <link rel = "icon" href = "Media/Icon.png">
+    <script src = "Scripts/Station2.js"></script>
+    <style>
+        body {
+            background-image: url("Media/Egypt2.png");
+        }
+    </style>
+</head>
+
+<body onload= "checkPrevious()">
+
+    <div style = "background-color: sandybrown; max-width: fit-content;" class = "center">
+        
+        <h1 style = "color:#FFFF; text-align: center;">
+            Rätsel 2: Der Wächter des Schatzes
+        </h1>
+        
+        <p style = "color:#FFFF; text-align: justify;">
+            Ihr trefft auf den Wächter des Schatzes, der Euch folgendes Rätsel gibt:<br>
+            <div style = "text-align: justify;color:white; font-size: larger;padding-top: 20pt;">
+                „Ich habe immer halb so viele Augen wie Ihr Schlangen habt. Um zum Schatz zu gelangen, müsst Ihr mir zwei Augen geben.“
+            </div><br>
+    
+            <!-- Eingebettete Makecode-Umgebung -->
+            
+            <div style="position:relative;height:0;padding-bottom:70%;overflow:hidden;">
+                <iframe id="makeCodeIFrame" style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/#pub:S00444-12019-94012-09000" frameborder="0" sandbox="allow-forms allow-scripts allow-modals allow-downloads allow-same-origin" allow = "usb"></iframe>
+            </div>
+
+            <br>
+            <!-- Ende eingebettete Makecode-Umgebung -->
+           
+            <br><br>
+            <p style = "color: #FFFF; text-align: left;">Wie viele Schlangen müsst Ihr sammeln, um dem Wächter 2 Augen zu geben?<br>
+                Gebt hier Eure Lösung ein:<br>
+            </p>
+            
+            <div style="padding-top: 20pt;">
+            <form style = "font-weight: bold;font-size: x-large; width: calc(300px + 15em);text-align: left;" id = "solutionInput">
+                <label style = "color: white" for = "numberOfSnakes">Anzahl der Schlangen:</label>
+                <input type="number" id="numberOfSnakes" name="numberOfSnakes">
+            </form>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <button id = "button1" style= "background-color: orangered; float: right" onclick= "checkSolution()">Lösung überprüfen</button><br>
+        </p>
+    </div>
+</body>
+

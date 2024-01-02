@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Schatzsucher: Das Hieroglyphenrätsel
+    </title>
+    <link rel = "stylesheet" href = "Style/style.css">
+    <link rel = "icon" href = "Media/Icon.png">
+    <script src = "Scripts/Station5.js"></script>
+    <style>
+        body {
+            background-image: url("Media/Egypt5.png");
+        }
+    </style>
+</head>
+
+<body onload= "checkPrevious()">
+
+    <div style = "background-color: sandybrown; max-width: fit-content;" class = "center">
+        
+        <h1 style = "color:#FFFF; text-align: center;">
+            Rätsel 5: Fallende Felsen
+        </h1>
+        
+        <p style = "color:#FFFF; text-align: justify;">
+            In dem Raum, den Ihr betretet, wurde eine Falle ausgelöst und Steine fallen von der Decke! Aus Euren Forschungen wisst Ihr zusätzlich, dass die Zahl der Schritte durch den Raum maximal 15 ist.<br>
+            Jedoch wurde der Raum so verändert, dass die genaue Anzahl nicht bekannt ist. Trefft Ihr auf einen Stein, müsst Ihr immer genauso viele Schritte zurückgehen, wie die Zahl die übrig bleibt, wenn Ihr die aktuelle Anzahl der Schritte durch 2 teilt.<br>
+            Beispiel: Ihr habt 7 Schritte gemacht und trefft auf einen Felsen. 7 geteilt durch 2 macht 3, Rest 1. Ihr müsst also genau einen Schritt zurückgehen.
+            
+            <br><br>
+
+            <!-- Eingebettete Makecode-Umgebung -->
+            
+            <div style="position:relative;height:0;padding-bottom:70%;overflow:hidden;">
+                <iframe id="makeCodeIFrame" style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/#pub:S79792-58019-37934-37172" frameborder="0" sandbox="allow-forms allow-scripts allow-modals allow-downloads allow-same-origin" allow = "usb"></iframe>
+            </div>
+           
+            <!-- Ende eingebettete Makecode-Umgebung -->
+
+            <br><br>
+            <p style = "color: #FFFF; text-align: left;">Wieviele Schritte braucht Ihr, um durch den Raum zu kommen?<br>
+                Gebt hier Eure Lösung ein:<br>
+            </p>
+            
+            <div style="padding-top: 20pt;">
+                <form style = "font-weight: bold;font-size: x-large; width: calc(300px + 15em);text-align: left;" id = "solutionInput">
+                    <label style = "color: white" for = "numberOfSteps">Anzahl der Schritte:</label>
+                    <input type="number" id="numberOfSteps" name="numberOfSteps">
+                </form>
+                </div>
+            <br><br><br><br><br><br><br><br>
+            <button id = "button1" style= "background-color: orangered; float: right" onclick= "checkSolution()">Lösung überprüfen</button><br>
+        </p>
+    </div>
+</body>

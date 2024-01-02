@@ -6,7 +6,10 @@
     <title>
         Schatzsucher
     </title>
-    <link rel = "stylesheet" href = "style.css">
+
+    <link rel = "stylesheet" href = "Style/style.css">
+    <link rel = "icon" href = "Media/Icon.png">
+    <script src = "Scripts/Index.js"></script>
     <style>
         body {
             background-image: url("Media/Egypt0.png");
@@ -22,17 +25,21 @@
         <p style = "color:#FFFF; text-align: justify;">
         An dieser Station müsst Ihr insgesamt 7 Rätsel lösen um den Schatz zu erhalten.<br>
         Doch keine Sorge! Auf Eurer Reise durch die Rätsel werdet Ihr auch Hilfen erhalten.<br>
+        Bevor Ihr mit den Rätseln beginnt, muss der micro:bit gekoppelt werden. Folgt dazu einfach der Anleitung.<br> 
         Wenn Ihr bereit seit, dann klickt unten auf "Schatzsuche starten."
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <button style = "background-color: red; float: right;" onclick="loadNext()">
+        <br><br>
+        <div>
+            1. Klickt auf "micro:bit koppeln".<br>
+            2. Wählt den micro:bit in der Liste aus und klickt auf "koppeln".<br>
+            3. Wenn alles OK ist, könnt Ihr die Schatzsuche starten.
+        </div>
+        <br><br>
+        Wir wünschen euch viel Erfolg beim Lösen der Rätsel!
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <button style = "background-color: red; float: left;" onclick="connectMicroBit()">micro:bit koppeln</button>
+        <button id = "nextButton" style = "background-color: red; float: right;" onclick="loadNext()" disabled>
             Schatzsuche starten!
         </button>
         <br>
     </p>
 </body>
-
-<script>
-    function loadNext() {
-        window.location = "Station1.html"
-    }
-</script>

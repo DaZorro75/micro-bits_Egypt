@@ -6,7 +6,9 @@
     <title>
         Schatzsucher: Das Kartenrätsel
     </title>
-    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "Style/style.css">
+    <link rel = "icon" href = "Media/Icon.png">
+    <script src = "Scripts/Station1.js"></script>
     <style>
         body {
             background-image: url("Media/Egypt1.png");
@@ -35,23 +37,3 @@
         <br>
     </p>
 </body>
-
-<script>
-function checkSolution(){
-    /*
-    Überprüfen der Lösung. Ist die Eingabe korrekt, verschwindet das Eingabefeld und man kann zum nächsten Rätsel gehen.
-    */
-        if(document.getElementById("stepsRight").value == 3 && document.getElementById("stepsDown").value == 3) {
-            alert("Ihr habt das Rätsel richtig gelöst!");
-            document.getElementById("button1").textContent = "Zum nächsten Rätsel";
-            document.getElementById("button1").style.backgroundColor = "red";
-            document.getElementById("button1").onclick = function() {
-                location.href = "Station2.html?Previous=53746174696F6E31"
-            }
-            document.getElementById("solutionInput").hidden = true;
-        }
-        else {
-            alert("Nein, diese Lösung ist leider nicht richtig. Probiert es erneut.");
-        }
-    }
-</script>
